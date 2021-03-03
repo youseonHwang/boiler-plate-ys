@@ -32,4 +32,4 @@ const userSchema = mongoose.Schema({
 })
 const User = mongoose.model('User', userSchema)
 
-module.exports(User) // user를 모듈로해서 모두가 쓸 수 있도록
+module.exports = { User } // user를 모듈로해서 모두가 쓸 수 있도록
