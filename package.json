@@ -1,7 +1,7 @@
 {
   "name": "boiler-plate",
   "version": "1.0.0",
-  "description": "\"# boiler-plate-ys\"",
+  "description": "Node.js + React\r 로그인 보일러 플레이트",
   "main": "index.js",
   "dependencies": {
     "antd": "^4.13.0",
@@ -16,10 +16,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "statr": "node server/index.js",
+    "start": "node server/index.js",
     "backend": "nodemon server/index.js",
-    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
   },
   "repository": {
     "type": "git",

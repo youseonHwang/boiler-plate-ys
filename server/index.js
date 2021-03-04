@@ -1,5 +1,5 @@
 const express = require('express') //express 모듈을 가져옴
-const { request } = require('../../backend/app')
+//const { request } = require('../../backend/app')
 const app = express() //function을 이용해서 새로운 app을 이용
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
@@ -72,7 +72,7 @@ app.post('/api/users/login', (req, res) => {
 })
 
 /* auth 라우터 */
-app.get('api/users/auth', auth, (req, res) => { // auth 미들웨어
+app.get('/api/users/auth', auth, (req, res) => { // auth 미들웨어
   // 여기까지 왔다는 것은 미들웨어를 모두 통과 (authentication이 true라는 말)
   res.status(200).json({
     _id: req.user._id,  //이렇게 할 수 있는 이유는 auth에서 request에 정보를 넣었기때문에
